@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="roll-icon">
-                        <a href="https://wa.me/<phone-number>" target="_blank">
+                        <a href=">" target="_blank">
                             <i class="ri-arrow-down-circle-fill"></i>
                             <p>Roll No Slips</p>
                         </a>
@@ -134,6 +134,17 @@
         <img src="/2021-gfl-123 (1)_page-0001.jpg" alt="">
 
     </div>
+       <script>
+        const rollIcons = document.querySelectorAll('.roll-icon a');
+const rollNos = document.querySelectorAll('.rollno');
+
+rollIcons.forEach((rollIcon, index) => {
+  rollIcon.addEventListener('click', (e) => {
+    e.preventDefault();
+    rollNos[index].scrollIntoView({ behavior: 'smooth' });
+  });
+});
+    </script>
     
 
 </body>
